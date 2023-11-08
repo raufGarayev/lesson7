@@ -1,0 +1,24 @@
+@import './variables.sass'
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+h1
+   color: $primaryColor
+   background-color: $textColor
+
+div
+    @include centering
+    @include bordering(1px, $primaryColor)
+
+
+.first
+    text-decoration: none
+    font-weight: 700
+    color: #000
+
+.second
+    @extend .first
+    color: red
